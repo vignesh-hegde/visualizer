@@ -1,13 +1,13 @@
-from os import system
+from os import system,name
 from time import sleep
 from random import randint
 
 A = lambda s: sleep(s)
 M = lambda s: input()
-
+clear = 'cls' if name == 'nt' else 'clear'
 
 def clrscr():
-    system('cls')
+    system(clear)
     print("----------------------------------------------------")
     print("|            Bubble sort Visualization             |")
     print("----------------------------------------------------")
